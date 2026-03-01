@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso & Co. | Modern Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Espresso<span>&Co.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Est. 2018 · Artisan Coffee House</span>
+            <h1>Brewed to Perfection</h1>
+            <p>Experience the art of coffee in a contemporary urban sanctuary.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="hero-scroll-cue">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="menu" class="container reveal-section">
+        <h2 class="section-title">Menu <em>Highlights</em></h2>
+        <p class="section-sub">Crafted with intention, served with warmth.</p>
+        <div class="menu-grid">
+            <div class="menu-card reveal-card">
+               <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500');"></div>
+                <div class="card-tag">Coffee</div>
+                <h3>Signature Latte</h3>
+                <p>Oat milk, honey, and a dash of cinnamon.</p>
+                <span class="price">₹550</span>
+            </div>
+            <div class="menu-card reveal-card">
+                <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=500');"></div>
+                <div class="card-tag">Pastry</div>
+                <h3>Glazed Croissant</h3>
+                <p>Flaky pastry with a vanilla bean glaze.</p>
+                <span class="price">₹425</span>
+            </div>
+            <div class="menu-card reveal-card">
+                  <img src="sandwich.png" class="menu-img">
+                <div class="card-tag">Breakfast</div>
+                <h3>Sandwich</h3>
+                <p>Crispy grilled sandwich with fresh veggies.</p>
+                <span class="price">₹300</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="reservations" class="container reveal-section">
+        <h2 class="section-title">Book a <em>Table</em></h2>
+        <p class="section-sub">Reserve your perfect moment with us.</p>
+        <form id="res-form" class="res-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your full name" required>
+                <span class="field-msg" id="name-msg"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+                <span class="field-msg" id="email-msg"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                    <span class="field-msg" id="date-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" placeholder="1–10 guests" min="1" max="10" required>
+            </div>
+            <button type="submit" class="btn">Confirm Booking</button>
+            <div class="form-success" id="form-success">
+                <span>✓</span> Booking request received! We'll confirm within 24 hours.
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Espresso<span>&Co.</span></div>
+            <p>123 Espresso Lane, Coffee City</p>
+            <p>Mon – Sun: 7:00 AM – 8:00 PM</p>
+            <div class="socials">
+                <a href="#" class="social-link">Instagram</a>
+                <span class="social-sep">|</span>
+                <a href="#" class="social-link">Facebook</a>
+                <span class="social-sep">|</span>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Espresso &amp; Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
