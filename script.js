@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════
    ESPRESSO & CO. — script.js
-   Original script + Enhancements combined
+   
    ═══════════════════════════════════════════ */
 
 // ── 1. Navbar Scroll Effect (original) ──────────
